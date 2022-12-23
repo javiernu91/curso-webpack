@@ -1,10 +1,26 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500";
+/* Línea de código usada con un link de las fuentes */
+/* @import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500"; */
+
+
+/* Ahora para usar las fuentes de archivos descargados, debemos escribir el siguiente código::after */
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../assets/fonts/ubuntu-regular.woff2') format('woff2'),
+		url('../assets/fonts/ubuntu-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
 
 html {
-	font-family: sans-serif;
+	font-family: 'Ubuntu';
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
+
+
+
 
 body {
 	margin: 0
